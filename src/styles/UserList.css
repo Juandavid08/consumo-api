@@ -1,0 +1,53 @@
+.user-list-container {
+    padding: 20px;
+  }
+  
+  .user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .user-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .user-card img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #dcdcdc; /* Color de fondo para páginas inactivas */
+    color: #333; /* Color de texto */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: #3b82f6; /* Color cuando se pasa el ratón por encima */
+    color: white;
+  }
+  
+  .pagination button.active {
+    background-color: #2563eb; /* Color para la página activa */
+    font-weight: bold;
+    border: 2px solid #1d4ed8; /* Color del borde de la página activa */
+  }
+  
